@@ -4,22 +4,11 @@
 - GitHub: Base de dados que realiza o backup de todas as linhas do tempo.
   
 
-## Git Commands
-
-### Starting
-
-- git init
-
-- git config --global --list
-    - Lista as configurações
-- git config --global user.name "Pedro Torres"
-    - Define o nome de usuário na configuração **local** do Git
-- git config --global user.email "monteirotorres@gmail.com"
-    - Define o email na configuração **local** do Git
-
-### Commit
-
-- git commit -m "mensagem relevante"
-    - por que, como, efeitos, limitações
-
-
+## Áreas conceituais
+### Área de desenvolvimento
+- Pasta onde foi dado o comando git init
+### Repositório local
+- Pasta invisível contendo os arquivos do git (a linha do tempo)
+- Arquivos importantíssimos para o versionamento. DONT touch.
+### Staging área
+- Área de transição. Guarda informações de quais arquivos serão adicionados ao controle versionamento.
