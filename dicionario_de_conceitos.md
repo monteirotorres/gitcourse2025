@@ -12,3 +12,9 @@
 - Arquivos importantíssimos para o versionamento. DONT touch.
 ### Staging área
 - Área de transição. Guarda informações de quais arquivos serão adicionados ao controle versionamento.
+- Arquivos podem estar:
+    - Tracked
+        - Staged
+        - Unstaged
+        - Unchanged
+    - Untracked

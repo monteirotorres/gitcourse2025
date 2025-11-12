@@ -1,18 +1,20 @@
 ## Git Commands
 
 ### Starting
-
-- git init
-
-- git config --global --list
-    - Lista as configurações
-- git config --global user.name "Pedro Torres"
-    - Define o nome de usuário na configuração **local** do Git
-- git config --global user.email "monteirotorres@gmail.com"
-    - Define o email na configuração **local** do Git
+- Inicializando o repositório local
+`git init`
+- Listando as configurações
+`git config --global --list`
+- Definindo o nome de usuário na configuração **local** do Git
+`git config --global user.name "Pedro Torres"`
+- Definindo o email na configuração **local** do Git
+`git config --global user.email "monteirotorres@gmail.com"`
+    
 
 ### Commit
-- git add filename
-    - Adiciona arquivos à "staging area" 
-- git commit -m "mensagem relevante"
-    - por que, como, efeitos, limitações
+- Adicionando arquivos à "staging area" 
+`git add __filename__`
+- "Comprometendo" os arquivos com as mudanças, i.e. gravando um ponto na linha do tempo
+    - A mensagem relevante deve conter por que, como, efeitos, limitações
+`git commit -m "__mensagem relevante__"`
+
