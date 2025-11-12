@@ -25,5 +25,16 @@
 - São usados em git diff e git show para mostrar os blocos de mudanças realizadas com a seguinte sintaxe:
 `@@ -<start_line_old>,<num_lines_old> +<start_line_new>,<num_lines_new> @@`
 
+## Para trabalhar em colaboração
+- É ncessário convidar um colaborador pela plataforma GitHub, na aba __settings__ --> Collaborators
+- O colaborador receberá um email e deverá aceitar a colaboração
+- Após isso, podemos clonar o diretório e trabalhar normalmente com ele
+`git clone git@github.com:noemyppereira/noemy.git` 
+`git add`
+`git commit`
+`git push` 
+- Para ver se há modificações entre a versão local e a remota, utilizamos `git pull`
+
+
 
 editando o repositósio, sem demissões, vamos acalmar kkkkk

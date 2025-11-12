@@ -42,6 +42,18 @@ Após colocar os arquivos na staging area com `git add` e se comprometer com as 
 Podemos sincronizar o repositório local com o que há no GitHub com o comando:
 `git pull`
 
+### Clonando um repositório remoto
+Podemos restaurar toda a informação do repositório remoto fazendo um clone
+    `git clone git@github.com:monteirotorres/repo.git`
+    - Vai surgir uma pasta local com o nome do repositório remoto
+
+### Desfazendo um commit
+- Git reset é perigoso pois exclui completamente todas as suas versões até o ponto especificado.
+`git reset --hard HEAD~1`
+- Git revert não exclui as versões, mas cria uma nova igual àquela desejada
+`git revert HEAD~1`
+ou
+`git revert __<hash#>__`
 
 ### Miscellaneous
 - Checando o estado dos arquivos em relação ao versionamento
