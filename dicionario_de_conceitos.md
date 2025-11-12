@@ -26,4 +26,4 @@
 `@@ -<start_line_old>,<num_lines_old> +<start_line_new>,<num_lines_new> @@`
 
 
-editando o repositósio, sem demissões, vamos acalmar kkkk
+editando o repositósio, sem demissões, vamos acalmar kkkkk
