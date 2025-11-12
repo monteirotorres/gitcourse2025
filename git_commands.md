@@ -11,10 +11,16 @@
 `git config --global user.email "monteirotorres@gmail.com"`
     
 
-### Commit
+### Commiting
 - Adicionando arquivos à "staging area" 
 `git add __filename__`
 - "Comprometendo" os arquivos com as mudanças, i.e. gravando um ponto na linha do tempo
     - A mensagem relevante deve conter por que, como, efeitos, limitações
-`git commit -m "__mensagem relevante__"`
+    - Às vezes é melhor juntar arquivos relacionados em um mesmo commit e separar arquivos não relacionados em arquivos diferentes
+  
+    `git commit -m "__mensagem relevante__"`
+
+### Miscellaneous
+- Checando o estado dos arquivos em relação ao versionamento
+`git status`
 
