@@ -18,3 +18,10 @@
         - Unstaged
         - Unchanged
     - Untracked
+### Repositório remoto
+- Backup no Github 
+
+## Hunk headers
+- São usados em git diff e git show para mostrar os blocos de mudanças realizadas com a seguinte sintaxe:
+`@@ -<start_line_old>,<num_lines_old> +<start_line_new>,<num_lines_new> @@`
+

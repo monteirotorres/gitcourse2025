@@ -1,6 +1,6 @@
 ## Git Commands
 
-### Starting
+### Starting local
 - Inicializando o repositório local
 `git init`
 - Listando as configurações
@@ -9,6 +9,15 @@
 `git config --global user.name "Pedro Torres"`
 - Definindo o email na configuração **local** do Git
 `git config --global user.email "monteirotorres@gmail.com"`
+
+### Inicializando acesso ao repositório remoto
+- Git não permite mais fazer operações só com username e senha. É preciso criar uma chave ssh e conectá-la ao repositório com os comandos a seguir:
+    - Criando a ssh-key 
+    `ssh-keygen -t ed25519 -C "monteirotorres@gmail.com"`
+        - Fazer uma senha para acessar a ssh-key futuramente
+        - Em __https://github.com/settings/keys__, fazer o upload do arquivo id_ed25519.pub (tem que dar um nome qualquer)
+    - Conectando a chave ao repositório (se continuar pedindo senha)
+    `git remote set-url origin git@github.com:monteirotorres/repo.git`
     
 
 ### Commiting
@@ -20,7 +29,32 @@
   
     `git commit -m "__mensagem relevante__"`
 
+### Pushing 
+Após colocar os arquivos na staging area com `git add` e se comprometer com as mudanças com `git commit`, podemos fazer o backup na base GitHub.
+- Ligando o diretório remoto ao local
+`git remote add origin https://github.com/monteirotorres/gitcourse2025.git`
+- Fazendo o primeiro push do repositório
+`git push --set-upstream origin master`
+- Nas próximas vezes
+`git push`
+
+### Pulling (sincronizando da nuvem)
+Podemos sincronizar o repositório local com o que há no GitHub com o comando:
+`git pull`
+
+
 ### Miscellaneous
 - Checando o estado dos arquivos em relação ao versionamento
 `git status`
+- Verificando o histórico de commits
+`git log`
+    - Aqui podemos adicionar as opções
+        - -p --> mostra as comparações também
+        - --reverse --> inverte a linha do tempo
+        - --oneline --> mostra informações resumidas em uma linha
+        - -n __nº__ --> mostra apenas os n últimos commits
+        - --abrev-commit --> abrevia o hash
+- Comparando duas versões
+`git diff oldhash newhash`
+    - Aqui a ordem faz a diferença.
 
