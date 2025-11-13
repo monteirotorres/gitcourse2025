@@ -60,6 +60,14 @@ ou
 - Nesse momento, os arquivos serão mostrados com decoradores indicando as diferenças entre as versões
 - Devemos então editar o arquivo conforme desejado, salvar e então **__add -> commit -> push__**
 
+### Branching
+- Listando os branches existentes
+`git branch --list`
+- Criando um novo branch
+`git branch <branchname>`
+- Trocando de branch
+`git checkout <branchname>`
+
 ### Miscellaneous
 - Checando o estado dos arquivos em relação ao versionamento
 `git status`
