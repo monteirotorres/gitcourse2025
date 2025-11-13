@@ -72,6 +72,8 @@ ou
         - -n __nº__ --> mostra apenas os n últimos commits
         - --abrev-commit --> abrevia o hash
 - Comparando duas versões
-`git diff oldhash newhash`
+`git diff <oldhash> <newhash>`
     - Aqui a ordem faz a diferença.
+- Renomeando um arquivo de forma adequada
+`git mv <oldname> <newname>`
 
