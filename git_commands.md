@@ -23,6 +23,8 @@
 ### Commiting
 - Adicionando arquivos à "staging area" 
 `git add __filename__`
+- Removendo um arquivo da "staging area"
+`git restore --staged <file>`
 - "Comprometendo" os arquivos com as mudanças, i.e. gravando um ponto na linha do tempo
     - A mensagem relevante deve conter por que, como, efeitos, limitações
     - Às vezes é melhor juntar arquivos relacionados em um mesmo commit e separar arquivos não relacionados em arquivos diferentes
