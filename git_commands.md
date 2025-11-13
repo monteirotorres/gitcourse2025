@@ -55,6 +55,11 @@ Podemos restaurar toda a informação do repositório remoto fazendo um clone
 ou
 `git revert __<hash#>__`
 
+### Resolvendo conflitos
+- Quando o push falhar por conta de conflito, para resolver precisamos primeiro realizar um `git pull`
+- Nesse momento, os arquivos serão mostrados com decoradores indicando as diferenças entre as versões
+- Devemos então editar o arquivo conforme desejado, salvar e então **__add -> commit -> push__**
+
 ### Miscellaneous
 - Checando o estado dos arquivos em relação ao versionamento
 `git status`
