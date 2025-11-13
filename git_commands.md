@@ -23,6 +23,8 @@
 ### Commiting
 - Adicionando arquivos à "staging area" 
 `git add __filename__`
+- Removendo um arquivo da "staging area"
+`git restore --staged <file>`
 - "Comprometendo" os arquivos com as mudanças, i.e. gravando um ponto na linha do tempo
     - A mensagem relevante deve conter por que, como, efeitos, limitações
     - Às vezes é melhor juntar arquivos relacionados em um mesmo commit e separar arquivos não relacionados em arquivos diferentes
@@ -59,6 +61,14 @@ ou
 - Quando o push falhar por conta de conflito, para resolver precisamos primeiro realizar um `git pull`
 - Nesse momento, os arquivos serão mostrados com decoradores indicando as diferenças entre as versões
 - Devemos então editar o arquivo conforme desejado, salvar e então **__add -> commit -> push__**
+
+### Branching
+- Listando os branches existentes
+`git branch --list`
+- Criando um novo branch
+`git branch <branchname>`
+- Trocando de branch
+`git checkout <branchname>`
 
 ### Miscellaneous
 - Checando o estado dos arquivos em relação ao versionamento

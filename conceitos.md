@@ -35,5 +35,13 @@
 `git push` 
 - Para ver se há modificações entre a versão local e a remota, utilizamos `git pull`
 
+## Branches
+- Branches permitem ramificações na linha temporal.
+- Arquivos que aparecem na pasta são apenas aqueles do branch atual
+- Pull traz todas as atualizações
+- O Push só empurra o branch
+- Não há limites de número de branches
+
+
 
 test
